@@ -1,0 +1,79 @@
+body {
+    margin: 0px;
+    background-image: url(./235784.jpg);
+}
+
+/*Imagem*/
+.image {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+/*Cada item da lista*/
+.list {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 20px;
+    margin-left: 0.8rem;
+}
+
+/*Cada item da lista quando o mouse está em cima*/
+.list:hover {
+    transition: background-color 0.4s, color 0.4s;
+    background-color: black;
+    color: rgb(211, 92, 112);
+    border-color: rgb(211, 92, 112);
+}
+
+/*Estilização do último item*/
+li:last-child {
+    background-color: rgb(211, 92, 112);
+}
+
+/*Configuração da header*/
+header {
+    display: flex;
+    background-color: rgb(19, 19, 19);
+    border-radius: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid pink 7px;
+    margin: 1rem;
+}
+
+ul {
+    padding-right: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "aside empty main";
+    grid-template-columns: 25% 1rem;
+    grid-template-rows: calc(100vh - 150px);
+}
+
+aside {
+    grid-area: aside;
+    border-radius: 50px;
+    border: 7px solid pink;
+    background-image: url(./lsg\ vertical.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    margin-left: 1rem;
+}
+
+main {
+    grid-area: main;
+    border-radius: 50px;
+    border: 7px solid pink;
+    background-image: url(./BLACKPINK-Lovesick-Girls-MV-black-pink-43561694-816-365.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 1rem;
+}
