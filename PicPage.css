@@ -1,0 +1,11 @@
+main {
+    display: flex;
+    gap: .8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: contain;
+}
+
+img {
+    size: 50px;
+}
